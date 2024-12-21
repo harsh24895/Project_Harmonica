@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>   <!---To implement the introduction and navigation content-->
+		<meta charset="utf-8" />
+		<title>Pizza order website</title>
+<link href="css/styles.css" rel="stylesheet"/>
+	</head>
+	<body >
+		<header style="background-color: orange" >
+            <h1 style="text-align: right"> <i><u>Maple Pizza</u></i></h1>
+        </header>
+		<main>   <!--To implement only main content of body-->
+            <h2>Pizza with Maple crust</h2>
+						<img src="img/pizza-animated-gif-40.gif" align="right"/>
+
+							<form id="edit_payment_info" method="get" action="process-form.php">
+								 <input type="hidden" name="form_sent" value="1" />
+								<section>      <!--uses to group the content in body-->
+									<fieldset>  <!--used to group the content of form-->
+										<legend>Pizza Order</legend>  <!-- to define the feildset and style it-->
+
+
+                    <div>                                        <!--<div>to define the function or styling to the elements-->
+											<label for="fname">First Name</label>
+											<input type="text" name="fname" id="fname" required/>
+											<label for="lname">Last Name</label>
+											<input type="text" name="lname" id="lname" required/><br>   <!--<br> tag is used to break the line -->
+													<label for="phone">Phone:</label>
+													<input id="phone" type="tel" name="phone" required/><br>
+													<label for="Delhi">Deliver by:</label><br>
+													<input type="radio" name="cctype" id="Delhi" value="delh" />
+	                        <label for="Delhi">Delhivery</label><br>
+													<input type="radio" name="cctype" id="pick" value="pick" />
+	                        <label for="pick">Pickup</label>
+                    </div>
+
+
+                    <div>
+                        <label for="address">Address Line 1:</label>
+                        <input id="address" type="text" name="address" required />
+                    </div>
+                    <div>
+                        <label for="addresssecond">Address Line 2:</label>
+                        <input id="addresssecond" type="text" name="addresssecond" required />
+                    </div>
+                    <div>
+                        <label for="num">Pizza Size:-</label>
+                        <select  id="num" name="num">
+                            <option value="choose" >choose…</option>
+                            <option value="small">small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">Xlarge</option>
+                            <option value="party">Party</option>
+
+                        </select>
+                    </div>
+
+										<div>
+                        <label for="shape">Shape:</label>
+                        <select id="shape" name="shape" >
+                            <option value="choose"> choose…</option>
+                            <option value="square">Square</option>
+                            <option value="round">Round</option>
+														<option value="heart">Heart shape</option>
+
+
+                        </select>
+                    </div>
+										<div>
+												<label for="sauce">Sauce:</label>
+												<select id="sauce" name="sauce2" >
+														<option value="choose"> choose…</option>
+														<option value="bbq">BBQ</option>
+														<option value="rac">Ranch</option>
+														<option value="fct">Fresh tomato</option>
+														<option value="pes">Pesto</option>
+
+
+												</select>
+										</div>
+										<div>
+                        <label for="piza">Number of Pizza</label>
+                        <select name="ccexpiremonth" id="piza">
+                            <option value="choose">choose…</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" />
+                    </div>
+
+
+
+				</fieldset>
+			</section>
+								<aside>  <!--uses to set the section to main content-->
+                <fieldset>
+                    <legend align="center">Select type of pizza</legend>
+                        <input type="radio" name="cctype" id="amex" value="amex" />
+                        <label for="amex">Meat pizza</label>
+
+                        <input type="radio" name="cctype" id="mc" value="mc" />
+                        <label for="mc">Veggie Pizza</label>
+												<div>
+														<label>Meat(Topping):-</label>
+														<select multiple="multiple" required>
+																<option value="choose">choose…</option>
+																<option value="1">Pepperoni</option>
+																<option value="2">Bacon</option>
+																<option value="3">Chicken </option>
+																<option value="4">Soppressata</option>
+																<option value="5">Anchovies</option>
+																<option value="6">Ham</option>
+																<option value="7">Italian Sausage</option>
+
+														</select>
+												</div>
+												<div>
+														<label>Veggies(Topping):</label>
+														<select multiple="multiple" required>
+																<option value="choose">choose…</option>
+																<option value="1">Artichoke Hearts</option>
+																<option value="2">Broccoli</option>
+																<option value="3">Green Olives </option>
+																<option value="4">Pineapple</option>
+																<option value="5">Tomatoes</option>
+																<option value="6">Red Onions</option>
+																<option value="7">Green Peppers</option>
+															 <option value="8">Black Olives</option>
+															 <option value="9">Cremini Mushrooms</option>
+															 <option value="10">Fresh Baby Spinach</option>
+
+
+														</select>
+												</div>
+
+
+
+                </fieldset>
+							</aside>
+								<aside style="text-align:center">
+                <fieldset>
+                    <legend>Crust Type</legend>
+                    <input type="checkbox" name="thin" id="thin1" value="thin1" />
+                    <label for="thin1">xThin</label>
+										<input type="checkbox" name="thikpizza" id="thik1" value="thik1" />
+                    <label for="thik1">Think</label>
+										<input type="checkbox" name="Gultan" id="gul1" value="gul1" />
+                    <label for="gul1">Gultan-Free chrust</label>
+										<input type="checkbox" name="wheat" id="whl1" value="whe1" />
+                    <label for="whl1">Whole Wheat</label>
+
+
+				</fieldset>
+			</aside>
+                <fieldset>
+                    <legend>Pizza and Special </legend>
+										<ul>                                 <!--to arrange the data in list-->
+											<li>
+										<p> Maple pizza special Large 3-Topping:- <u> $7.99*</u></p></li>
+										<li><p> x-Large Four topping special:- <u> $13.99*</u></p></li>
+										<li><p> Party special with combo pack:- <u> $19.99*</u></p></li>
+									</ul>
+										<img src="img/newhi five.gif" align ="right"/>
+                    <p>Panzzorotti  <img src="img/PanzoTwins2Pop.jpg" >Drinks </p>
+										<div>
+                        <label for="num">Pizza Special:</label>
+                        <select id="num" name="nummber" required>
+                            <option value="choose">choose…</option>
+                            <option value="top">Maple 3-topping special</option>
+														<option value="top2">x-large four topping</option>
+														<option value="top3">Party special with comb pack </option>
+                            <option value="sop">Soppressata</option>
+                            <option value="ita">Italian</option>
+                            <option value="chk">Chinken Pesto</option>
+                            <option value="mar">Margherita</option>
+                            <option value="asi">Asiago Chinken</option>
+
+
+                        </select>
+                    </div>
+										<div>
+											<label for="topp3">Panzzo(Topping):</label>
+											<select id="topp3" name="topp">
+													<option value="choose">choose…</option>
+													<option value="arch">Artichoke Hearts</option>
+													<option value="brk">Broccoli</option>
+													<option value="grn">Green Olives </option>
+													<option value="pin">Pineapple</option>
+													<option value="tom">Tomatoes</option>
+													<option value="rd">Red Onions</option>
+													<option value="gp">Green Peppers</option>
+												 <option value="go">Black Olives</option>
+												 <option value="musk">Cremini Mushrooms</option>
+												 <option value="baby">Fresh Baby Spinach</option>
+												 <option value="pep">Pepperoni</option>
+												 <option value="bcn">Bacon</option>
+												 <option value="chk">Chicken </option>
+												 <option value="spr">Soppressata</option>
+												 <option value="anch">Anchovies</option>
+												 <option value="ham">Ham</option>
+												 <option value="it">Italian Sausage</option>
+
+
+											</select>
+
+
+                    </div>
+
+                    <div>
+											<label for="num">Panzzorotti type:</label>
+											<select id="num" name="num3" size="3" required>
+													<option value="1">choose…</option>
+													<option value="2">Fried</option>
+													<option value="3">Baked</option></select>
+					          </div>
+										<div>
+											<label for="drk">Drinks:</label>
+											<select id="drk" name="num" required>
+													<option value="choose">choose…</option>
+													<option value="can">Canada Dry</option>
+													<option value="coc">Cocacola</option>
+													<option value="pepp">Pepsi</option>
+													<option value="7u">7-up</option>
+													<option value="dew">Dew</option>
+
+												</select>
+					          </div>
+										<div>
+											<label for="dip">Dippings:</label>
+											<select id="dip" name="num" required>
+													<option value="1">choose…</option>
+													<option value="2">Crimy Garlic</option>
+													<option value="3">Ranch</option>
+													<option value="4">Cheder</option>
+													<option value="5">Hot sauce</option>
+													<option value="6">Blue chesse</option>
+
+												</select>
+					          </div>
+								</fieldset>
+								<center>
+									<input type="button" value="Place your pizza" onclick="window.location.href='https://webandint1.azurewebsites.net/forms%20wek-5/'" />
+						<!-- <input type="Submit"> -->
+						<input type="Reset">
+
+					</center>
+					</form>
+        </main>
+        <footer style="background-color: orange">            <!--uses to add copyright information and some social infromation links-->
+            <p><small>* Conditions apply to all Pizza price </small></p>
+        </footer>
+	</body>
+</html>

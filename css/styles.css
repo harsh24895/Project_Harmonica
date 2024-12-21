@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+body{                                                     /*set the font-style size and padding and margin and bg coloe to background*/
+font-family: "Helvetica", Arial, sans-serif;
+font-size: 18px;
+line-height:1.5;
+padding:0;
+margin:0;
+background-color: lightgrey;
+}
+
+ .container{  //* for all div elemnet and to set in middle */
+  width:80%;
+  height: 100%;
+  margin:auto;
+  text-align: center;
+  overflow: hidden;  /*to set the value to hidden if overflow*/
+  }
+ .buttonn{           /*set the button color item for orange and height of it*/
+  height: 38px;
+  background: orange;
+  border:0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+ }
+
+ header{     /*set the index for navigation to scroll and bg color for it and padding to it*/
+  background-color: #303b4c;
+  color: white;
+  height: 60px;
+  padding-top: 40px;
+  width: 100%;
+  z-index: 10;
+  position: fixed;   /* set it fixed*/
+
+
+ }
+ header a{     /*for anchor element in header set the uppercase and text to none for it*/
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+ }
+
+ img{    /*float the image to left*/
+
+  float: left;
+
+ }
+
+
+
+ nav{   /*set all around margin 0 and center in element*/
+
+  margin: 0% 0% 0% 0%;
+  align-items: center;
+ }
+
+
+ h1{
+
+ }
+ ul{   /*set underorder list to padding to margin to 0*/
+
+  padding: 0;
+  margin: 0;
+
+
+}
+.box p{
+  margin: 20px;
+
+}
+ header li{ height: 20px;      /*set the header in list item to padding 20px and flaot to left*/
+  padding: 0 20px 0 20px;
+  float: left;
+  display: inline;
+
+}
+header #im h1{ /*set header h1 element to left and padding 60px;*/
+  float: left;
+  padding-left: 60px;
+  margin: 0;
+}
+
+
+header h1:hover{      /*hover element set to orange in all header*/
+  color: orange;
+}
+
+
+header nav{      /*navigation to right for dropdown*/
+  float: right;
+  margin-top: 10px;
+}
+
+header .current a{
+  color:green;
+  font-weight: bold;
+}
+
+li a{  /*declare the block element in list and anchor padding it*/
+  display: block;
+  padding: 2px;
+}
+header a:hover{
+  text-decoration: underline;
+  color: orange;
+  font-weight: bold;
+}
+li:hover ul{   /* imp part */  /*set the hover to list under unorderlist of element and set left auto*/
+  left: auto;
+}
+main{
+  clear: both;
+}
+#sect{   /*declare the id for section element and text-align it center and set weight and height*/
+  /* min-height: 400px; */
+  background: url("../img/StockSnap.jpg") no-repeat ;
+
+  text-align: center;
+  color: black;
+  padding-top: 250px;
+  top: 100%;
+  weight: 100%;
+  height: 400px;
+  text-transform: uppercase;
+
+
+}
+
+
+#sectt{/*declare the id for section element and text-align it center and set weight and height*/
+  /* min-height: 400px; */
+  background: url("../img/telephone.jpg") no-repeat ;
+
+  text-align: center;
+  color: black;
+  padding-top: 250px;
+  top: 100%;
+  weight: 100%;
+  height: 400px;
+  text-transform: uppercase;
+
+
+}
+#se{
+
+  background: url("../img/certi.jpg") no-repeat ;
+
+  text-align: center;
+  color: white;
+  padding-top: 250px;
+  top: 100%;
+  weight: 100%;
+  height: 400px;
+  text-transform: uppercase;
+}
+#new{   /*declare id for aside element and set to right*/
+  float:right;
+  padding-right: 70px;
+}
+
+#sectcon{
+  min-height: 400px;
+  background-image: url(https://phsyopro.azurewebsites.net/massage_project/imgg/telephone-586266_1920.jpg);
+  text-align: center;
+  color: black;
+
+}
+
+
+
+}
+#sect h1{   /*for section h1 element set the margin and its font size of it*/
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 9px;
+
+
+}
+#sect p{ /*set the paragarapgh for the sectioning element*/
+  font-size: 20px;}
+
+  #email{     /*declare the email elemnet to white color and padding to it*/
+    padding: 15px;
+    color: white;
+    background: #303b4c;
+  }
+  #email h1{ /*for h1 to left and padding to keft*/
+    float:left;
+    padding-left: 250px;
+  }
+  #email form{
+
+    float: none;
+    padding-top: 8px;
+    margin-top: 15px;
+  }
+  #email input[type="email"]{     /*assign a input a email and padding and height of it*/
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+
+  }
+  #boxes{   /*declare the boxes id and assign the margin top of it*/
+    margin-top: 20px;
+
+  }
+  #boxes .box{
+     float:right;
+     padding: 10px;
+     position: relative;
+     /* text-align: center; */
+  }
+  .nb{
+
+  }
+  #boxes .box {
+  /* transform: translate(-50%, -50%); */}
+
+
+
+  footer{       /*footer to margin top and align the center and top to 20px*/
+    padding: 20px;
+  margin-top: 20px;
+color: white;
+background-color:#303b4c;
+text-align: center;}
